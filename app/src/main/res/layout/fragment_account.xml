@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_horizontal_logo"
+            android:id="@+id/home_logo"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_logo"
+            android:id="@+id/firstRelative">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Account Settings"
+                android:fontFamily="@font/acme"
+                android:id="@+id/AccountSettingText"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AccountSettingText"
+                android:fontFamily="@font/acme"
+                android:text="Edit Profile"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/editprofile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprofile"
+                android:fontFamily="@font/acme"
+                android:text="Logout"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:onClick="logout"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/firstRelative"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Orders"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
